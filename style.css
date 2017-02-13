@@ -1,0 +1,17 @@
+body{
+  margin: 20px;
+}
+
+input {
+  margin: 10px;
+}
+
+hr {
+  height: 3px;
+  color: #000;
+  background-color:#000;
+}
+
+h1 {
+  text-align:center;
+}
