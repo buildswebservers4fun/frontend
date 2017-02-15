@@ -85,7 +85,7 @@ var loadEvents = function() {
       "second": secondNum
     };
 
-    var post = $.post(addUrl, JSON.Stringify(data))
+    var post = $.post(addUrl, JSON.stringify(data))
       .done(function(response) {
         response = JSON.parse(response);
         $("#result").text = response.answer;
