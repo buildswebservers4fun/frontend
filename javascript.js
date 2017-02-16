@@ -3,7 +3,7 @@ $(document).ready(function(){
   loadEvents();
 });
 
-var url = "http://477-38.csse.rose-hulman.edu:8080/UserID/"; 
+var url = "http://477-33.csse.rose-hulman.edu:8080/UserID/"; 
 var addUrl = "";
 
 var loadEvents = function() {
