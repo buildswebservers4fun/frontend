@@ -68,13 +68,11 @@ var loadEvents = function() {
       url: url+id
     })
     .done(function(response){
-      alert("Successfully deleted!");
+      updateUserList();
+      alert("Delete successful!");
     })
     .fail(function(response){
       alert("Delete failed!");
-    })
-    .always(function(response){
-      updateUserList();
     });
   });
 
