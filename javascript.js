@@ -4,7 +4,7 @@ $(document).ready(function(){
 });
 
 var url = "http://477-33.csse.rose-hulman.edu:8080/UserID/"; 
-var addUrl = "http://477-33.csse.rose-hulman.edu:8080/Calculator/"; 
+var addUrl = "http://477-32.csse.rose-hulman.edu:8080/Calculator/"; 
 
 var loadEvents = function() {
   $("#submitButton").click(function(){
