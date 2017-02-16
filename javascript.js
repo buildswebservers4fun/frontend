@@ -88,7 +88,7 @@ var loadEvents = function() {
     var post = $.post(addUrl, JSON.stringify(data))
       .done(function(response) {
         response = JSON.parse(response);
-        $("#result").val(response.answer);
+        $("#result").text(response.answer);
         alert("Addition Succeeded!");
       })
       .fail(function(response){
