@@ -77,8 +77,8 @@ var loadEvents = function() {
   });
 
   $("#addButton").click(function(){
-    var firstNum = $("#firstNumber").val();
-    var secondNum = $("#secondNumber").val();
+    var firstNum = $("#firstNumberInput").val();
+    var secondNum = $("#secondNumberInput").val();
 
     var data = {
       "first": firstNum,
@@ -88,7 +88,7 @@ var loadEvents = function() {
     var post = $.post(addUrl, JSON.stringify(data))
       .done(function(response) {
         response = JSON.parse(response);
-        $("#result").text = response.answer;
+        $("#result").val(response.answer);
         alert("Addition Succeeded!");
       })
       .fail(function(response){
